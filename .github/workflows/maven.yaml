@@ -1,0 +1,42 @@
+name: Execute Weather Bot
+
+on:
+  schedule:
+    - cron: "0 */4 * * *"
+  workflow_dispatch:
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Install dependencies
+        run: mvn install
+
+      - name: Run the project
+        env:
+          OPENWEATHER_TOKEN: ${{ secrets.OPENWEATHER_TOKEN }}
+          OPENWEATHER_ZIP_CODE: ${{ secrets.OPENWEATHER_ZIP_CODE }}
+          OPENWEATHER_LANG: ${{ secrets.OPENWEATHER_LANG }}
+          OPENWEATHER_UNITS: ${{ secrets.OPENWEATHER_UNITS }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: mvn exec:java
+
+      - name: Commit changes
+        run: |
+          git config --global user.email "dev@asjordi.dev"
+          git config --global user.name "Jordi Ayala"
+          git add logs
+          git diff --staged --quiet || git commit -m 'chore: Update logs'
+          git push
