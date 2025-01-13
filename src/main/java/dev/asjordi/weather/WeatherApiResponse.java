@@ -1,4 +1,4 @@
-package dev.asjordi;
+package dev.asjordi.weather;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;

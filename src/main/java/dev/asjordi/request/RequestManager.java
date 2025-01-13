@@ -1,4 +1,6 @@
-package dev.asjordi;
+package dev.asjordi.request;
+
+import dev.asjordi.GlobalProperties;
 
 import java.io.IOException;
 import java.net.URI;
