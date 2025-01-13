@@ -3,7 +3,10 @@ package dev.asjordi;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Telegram Weather Bot");
+
+        WeatherDataProcessor processor = new WeatherDataProcessor();
+        processor.processData();
+
     }
 
 }
