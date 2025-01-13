@@ -1,14 +1,17 @@
 package dev.asjordi.weather;
 
+import dev.asjordi.logger.LoggerConfig;
 import dev.asjordi.request.RequestManager;
-
 import java.time.Instant;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class WeatherDataProcessor {
 
+    private static final Logger LOGGER = LoggerConfig.getLogger();
     private final RequestManager requestManager;
     private final DataMapper dataMapper;
     private String report;
@@ -16,19 +19,28 @@ public class WeatherDataProcessor {
     public WeatherDataProcessor() {
         this.requestManager = new RequestManager();
         this.dataMapper = new DataMapper();
+        LOGGER.log(Level.INFO, () -> "WeatherDataProcessor initialized");
     }
 
     public void processData() {
+        LOGGER.log(Level.INFO, () -> "Starting data processing");
         var response = requestManager.makeRequest();
         WeatherApiResponse dataWeather;
 
-        if (response.isPresent()) dataWeather = dataMapper.mapDataToObject(response);
-        else throw new RuntimeException("Error getting data from API");
+        if (response.isPresent()) {
+            dataWeather = dataMapper.mapDataToObject(response);
+            LOGGER.log(Level.INFO, "Data processed successfully");
+        }
+        else {
+            LOGGER.log(Level.WARNING, "No data found");
+            return;
+        }
 
         generateReport(dataWeather);
     }
 
     private void generateReport(WeatherApiResponse response) {
+        LOGGER.log(Level.INFO, () -> "Generating weather report");
         StringBuilder message = new StringBuilder();
 
         String cityName = response.getLocationName();
@@ -54,6 +66,7 @@ public class WeatherDataProcessor {
                 .append("⏰ Última actualización: ").append(formattedDate);
 
         this.report = message.toString();
+        LOGGER.log(Level.INFO, () -> "Weather report generated successfully");
     }
 
     private String convertTime(long epoch) {
