@@ -2,6 +2,8 @@ package dev.asjordi.weather;
 
 import dev.asjordi.logger.LoggerConfig;
 import dev.asjordi.request.RequestManager;
+import lombok.Getter;
+
 import java.time.Instant;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
@@ -9,6 +11,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+@Getter
 public class WeatherDataProcessor {
 
     private static final Logger LOGGER = LoggerConfig.getLogger();
@@ -75,8 +78,5 @@ public class WeatherDataProcessor {
         return fecha.format(formato);
     }
 
-    public String getReport() {
-        return report;
-    }
 
 }

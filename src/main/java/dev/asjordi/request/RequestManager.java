@@ -18,7 +18,7 @@ import java.util.logging.Logger;
 public class RequestManager {
 
     private static final Logger LOGGER = LoggerConfig.getLogger();
-    private GlobalProperties props = GlobalProperties.getInstance();
+    private final GlobalProperties props = GlobalProperties.getInstance();
     private String URL = "";
 
     public RequestManager() {
