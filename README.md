@@ -9,7 +9,7 @@ Java application that allows you to periodically check the weather for a specifi
 > This project is also available using Azure Functions, check it out [here](https://github.com/ASJordi/azure-telegram-weather-bot)
 
 <div align="center">
-    <img src="src/main/resources/weather-bot.png" alt="Telegram Weather Bot" width="813">
+    <img src="src/main/resources/weather-bot.png" alt="Telegram Weather Bot" width="406">
 </div>
 
 ## Features :sparkles:
