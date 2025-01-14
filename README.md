@@ -6,6 +6,8 @@
 
 Java application that allows you to periodically check the weather for a specific city automatically via a Telegram bot. The information is retrieved from the [OpenWeatherMap API](https://openweathermap.org/api), processed using the [Jackson Databind](https://github.com/FasterXML/jackson-databind) library, and sent via a Telegram bot using the [TelegramBots](https://rubenlagus.github.io/TelegramBotsDocumentation/telegram-bots.html) library. The application runs automatically every 4 hours using a GitHub Actions workflow.
 
+> This project is also available using Azure Functions, check it out [here](https://github.com/ASJordi/azure-telegram-weather-bot)
+
 <div align="center">
     <img src="src/main/resources/weather-bot.png" alt="Telegram Weather Bot" width="813">
 </div>
