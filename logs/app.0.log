@@ -10870,3 +10870,215 @@
   <message>Weather report sent successfully</message>
 </record>
 </log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2025-07-21T00:54:15.025620392Z</date>
+  <millis>1753059255025</millis>
+  <nanos>620392</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.Main</class>
+  <method>main</method>
+  <thread>28</thread>
+  <message>Starting application</message>
+</record>
+<record>
+  <date>2025-07-21T00:54:15.039426584Z</date>
+  <millis>1753059255039</millis>
+  <nanos>426584</nanos>
+  <sequence>1</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.request.RequestManager</class>
+  <method>buildURL</method>
+  <thread>28</thread>
+  <message>Building URL for OpenWeather API request</message>
+</record>
+<record>
+  <date>2025-07-21T00:54:15.040083484Z</date>
+  <millis>1753059255040</millis>
+  <nanos>83484</nanos>
+  <sequence>2</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.request.RequestManager</class>
+  <method>buildURL</method>
+  <thread>28</thread>
+  <message>URL built successfully</message>
+</record>
+<record>
+  <date>2025-07-21T00:54:15.181156973Z</date>
+  <millis>1753059255181</millis>
+  <nanos>156973</nanos>
+  <sequence>3</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.weather.DataMapper</class>
+  <method>&lt;init&gt;</method>
+  <thread>28</thread>
+  <message>DataMapper initialized</message>
+</record>
+<record>
+  <date>2025-07-21T00:54:15.181925150Z</date>
+  <millis>1753059255181</millis>
+  <nanos>925150</nanos>
+  <sequence>4</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.weather.WeatherDataProcessor</class>
+  <method>&lt;init&gt;</method>
+  <thread>28</thread>
+  <message>WeatherDataProcessor initialized</message>
+</record>
+<record>
+  <date>2025-07-21T00:54:15.182553417Z</date>
+  <millis>1753059255182</millis>
+  <nanos>553417</nanos>
+  <sequence>5</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.weather.WeatherDataProcessor</class>
+  <method>processData</method>
+  <thread>28</thread>
+  <message>Starting data processing</message>
+</record>
+<record>
+  <date>2025-07-21T00:54:15.183211190Z</date>
+  <millis>1753059255183</millis>
+  <nanos>211190</nanos>
+  <sequence>6</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.request.RequestManager</class>
+  <method>makeRequest</method>
+  <thread>28</thread>
+  <message>Starting HTTP request to OpenWeather API</message>
+</record>
+<record>
+  <date>2025-07-21T00:54:15.237107341Z</date>
+  <millis>1753059255237</millis>
+  <nanos>107341</nanos>
+  <sequence>7</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.request.RequestManager</class>
+  <method>makeRequest</method>
+  <thread>28</thread>
+  <message>HTTP request build successfully</message>
+</record>
+<record>
+  <date>2025-07-21T00:54:15.869820063Z</date>
+  <millis>1753059255869</millis>
+  <nanos>820063</nanos>
+  <sequence>8</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.request.RequestManager</class>
+  <method>makeRequest</method>
+  <thread>28</thread>
+  <message>HTTP client built successfully</message>
+</record>
+<record>
+  <date>2025-07-21T00:54:36.055651218Z</date>
+  <millis>1753059276055</millis>
+  <nanos>651218</nanos>
+  <sequence>9</sequence>
+  <logger>global</logger>
+  <level>SEVERE</level>
+  <class>dev.asjordi.request.RequestManager</class>
+  <method>makeRequest</method>
+  <thread>28</thread>
+  <message>Failed to send HTTP request: java.net.http.HttpConnectTimeoutException: HTTP connect timed out</message>
+</record>
+<record>
+  <date>2025-07-21T00:54:36.056267844Z</date>
+  <millis>1753059276056</millis>
+  <nanos>267844</nanos>
+  <sequence>10</sequence>
+  <logger>global</logger>
+  <level>WARNING</level>
+  <class>dev.asjordi.weather.WeatherDataProcessor</class>
+  <method>processData</method>
+  <thread>28</thread>
+  <message>No data found</message>
+</record>
+<record>
+  <date>2025-07-21T00:54:36.137201691Z</date>
+  <millis>1753059276137</millis>
+  <nanos>201691</nanos>
+  <sequence>11</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.bot.WeatherBot</class>
+  <method>&lt;init&gt;</method>
+  <thread>28</thread>
+  <message>WeatherBot initialized</message>
+</record>
+<record>
+  <date>2025-07-21T00:54:36.138143400Z</date>
+  <millis>1753059276138</millis>
+  <nanos>143400</nanos>
+  <sequence>12</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.bot.BotService</class>
+  <method>&lt;init&gt;</method>
+  <thread>28</thread>
+  <message>BotService initialized</message>
+</record>
+<record>
+  <date>2025-07-21T00:54:36.138689555Z</date>
+  <millis>1753059276138</millis>
+  <nanos>689555</nanos>
+  <sequence>13</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.bot.BotService</class>
+  <method>sendWeatherReport</method>
+  <thread>28</thread>
+  <message>Sending weather report</message>
+</record>
+<record>
+  <date>2025-07-21T00:54:36.639291595Z</date>
+  <millis>1753059276639</millis>
+  <nanos>291595</nanos>
+  <sequence>14</sequence>
+  <logger>global</logger>
+  <level>SEVERE</level>
+  <class>dev.asjordi.bot.BotService</class>
+  <method>sendWeatherReport</method>
+  <thread>28</thread>
+  <message>Error sending weather report</message>
+  <exception>
+    <message>java.lang.NullPointerException: text is marked non-null but is null</message>
+    <frame>
+      <class>org.telegram.telegrambots.meta.api.methods.send.SendMessage$SendMessageBuilder</class>
+      <method>text</method>
+      <line>39</line>
+    </frame>
+    <frame>
+      <class>dev.asjordi.bot.BotService</class>
+      <method>sendWeatherReport</method>
+      <line>31</line>
+    </frame>
+    <frame>
+      <class>dev.asjordi.Main</class>
+      <method>main</method>
+      <line>24</line>
+    </frame>
+    <frame>
+      <class>org.codehaus.mojo.exec.ExecJavaMojo$1</class>
+      <method>run</method>
+      <line>279</line>
+    </frame>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>run</method>
+      <line>1583</line>
+    </frame>
+  </exception>
+</record>
+</log>
