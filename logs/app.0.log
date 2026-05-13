@@ -27778,3 +27778,235 @@
   <message>Weather report sent successfully</message>
 </record>
 </log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-05-13T01:53:01.504295119Z</date>
+  <millis>1778637181504</millis>
+  <nanos>295119</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.Main</class>
+  <method>main</method>
+  <thread>32</thread>
+  <message>Starting application</message>
+</record>
+<record>
+  <date>2026-05-13T01:53:01.515516910Z</date>
+  <millis>1778637181515</millis>
+  <nanos>516910</nanos>
+  <sequence>1</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.request.RequestManager</class>
+  <method>buildURL</method>
+  <thread>32</thread>
+  <message>Building URL for OpenWeather API request</message>
+</record>
+<record>
+  <date>2026-05-13T01:53:01.516357415Z</date>
+  <millis>1778637181516</millis>
+  <nanos>357415</nanos>
+  <sequence>2</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.request.RequestManager</class>
+  <method>buildURL</method>
+  <thread>32</thread>
+  <message>URL built successfully</message>
+</record>
+<record>
+  <date>2026-05-13T01:53:01.640986880Z</date>
+  <millis>1778637181640</millis>
+  <nanos>986880</nanos>
+  <sequence>3</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.weather.DataMapper</class>
+  <method>&lt;init&gt;</method>
+  <thread>32</thread>
+  <message>DataMapper initialized</message>
+</record>
+<record>
+  <date>2026-05-13T01:53:01.641820262Z</date>
+  <millis>1778637181641</millis>
+  <nanos>820262</nanos>
+  <sequence>4</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.weather.WeatherDataProcessor</class>
+  <method>&lt;init&gt;</method>
+  <thread>32</thread>
+  <message>WeatherDataProcessor initialized</message>
+</record>
+<record>
+  <date>2026-05-13T01:53:01.642343832Z</date>
+  <millis>1778637181642</millis>
+  <nanos>343832</nanos>
+  <sequence>5</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.weather.WeatherDataProcessor</class>
+  <method>processData</method>
+  <thread>32</thread>
+  <message>Starting data processing</message>
+</record>
+<record>
+  <date>2026-05-13T01:53:01.642899553Z</date>
+  <millis>1778637181642</millis>
+  <nanos>899553</nanos>
+  <sequence>6</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.request.RequestManager</class>
+  <method>makeRequest</method>
+  <thread>32</thread>
+  <message>Starting HTTP request to OpenWeather API</message>
+</record>
+<record>
+  <date>2026-05-13T01:53:01.652251923Z</date>
+  <millis>1778637181652</millis>
+  <nanos>251923</nanos>
+  <sequence>7</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.request.RequestManager</class>
+  <method>makeRequest</method>
+  <thread>32</thread>
+  <message>HTTP request build successfully</message>
+</record>
+<record>
+  <date>2026-05-13T01:53:01.685835514Z</date>
+  <millis>1778637181685</millis>
+  <nanos>835514</nanos>
+  <sequence>8</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.request.RequestManager</class>
+  <method>makeRequest</method>
+  <thread>32</thread>
+  <message>HTTP client built successfully</message>
+</record>
+<record>
+  <date>2026-05-13T01:53:01.993784597Z</date>
+  <millis>1778637181993</millis>
+  <nanos>784597</nanos>
+  <sequence>9</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.request.RequestManager</class>
+  <method>makeRequest</method>
+  <thread>32</thread>
+  <message>HTTP request sent successfully</message>
+</record>
+<record>
+  <date>2026-05-13T01:53:01.996336237Z</date>
+  <millis>1778637181996</millis>
+  <nanos>336237</nanos>
+  <sequence>10</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.weather.DataMapper</class>
+  <method>mapDataToObject</method>
+  <thread>32</thread>
+  <message>Mapping data to WeatherApiResponse object</message>
+</record>
+<record>
+  <date>2026-05-13T01:53:02.046361423Z</date>
+  <millis>1778637182046</millis>
+  <nanos>361423</nanos>
+  <sequence>11</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.weather.DataMapper</class>
+  <method>mapDataToObject</method>
+  <thread>32</thread>
+  <message>Data mapped to WeatherApiResponse object successfully</message>
+</record>
+<record>
+  <date>2026-05-13T01:53:02.046881818Z</date>
+  <millis>1778637182046</millis>
+  <nanos>881818</nanos>
+  <sequence>12</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.weather.WeatherDataProcessor</class>
+  <method>processData</method>
+  <thread>32</thread>
+  <message>Data processed successfully</message>
+</record>
+<record>
+  <date>2026-05-13T01:53:02.047504945Z</date>
+  <millis>1778637182047</millis>
+  <nanos>504945</nanos>
+  <sequence>13</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.weather.WeatherDataProcessor</class>
+  <method>generateReport</method>
+  <thread>32</thread>
+  <message>Generating weather report</message>
+</record>
+<record>
+  <date>2026-05-13T01:53:02.049868973Z</date>
+  <millis>1778637182049</millis>
+  <nanos>868973</nanos>
+  <sequence>14</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.weather.WeatherDataProcessor</class>
+  <method>generateReport</method>
+  <thread>32</thread>
+  <message>Weather report generated successfully</message>
+</record>
+<record>
+  <date>2026-05-13T01:53:02.109343209Z</date>
+  <millis>1778637182109</millis>
+  <nanos>343209</nanos>
+  <sequence>15</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.bot.WeatherBot</class>
+  <method>&lt;init&gt;</method>
+  <thread>32</thread>
+  <message>WeatherBot initialized</message>
+</record>
+<record>
+  <date>2026-05-13T01:53:02.110015268Z</date>
+  <millis>1778637182110</millis>
+  <nanos>15268</nanos>
+  <sequence>16</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.bot.BotService</class>
+  <method>&lt;init&gt;</method>
+  <thread>32</thread>
+  <message>BotService initialized</message>
+</record>
+<record>
+  <date>2026-05-13T01:53:02.110520324Z</date>
+  <millis>1778637182110</millis>
+  <nanos>520324</nanos>
+  <sequence>17</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.bot.BotService</class>
+  <method>sendWeatherReport</method>
+  <thread>32</thread>
+  <message>Sending weather report</message>
+</record>
+<record>
+  <date>2026-05-13T01:53:03.644410648Z</date>
+  <millis>1778637183644</millis>
+  <nanos>410648</nanos>
+  <sequence>18</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>dev.asjordi.bot.BotService</class>
+  <method>sendWeatherReport</method>
+  <thread>32</thread>
+  <message>Weather report sent successfully</message>
+</record>
+</log>
